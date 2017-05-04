@@ -6,9 +6,7 @@ public class ContaPK implements Serializable{
 	
 	
 	private int conta;
-	private int agencia;
-	
-	
+	private int agencia;	
 	
 	public int getNumero() {
 		return conta;

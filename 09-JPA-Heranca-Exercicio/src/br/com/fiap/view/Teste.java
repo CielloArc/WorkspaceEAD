@@ -16,8 +16,10 @@ public class Teste {
 		
 		Agencia agencia = new Agencia("R. das Bananas, 70.");		
 		ContaCorrente cc = new ContaCorrente(agencia, 100, 100, 1000);
+		ContaPoupanca cp= new ContaPoupanca(agencia, 1000, 1000);
 		
 		try {
+			dao.cadastrar(cp);
 			dao.cadastrar(cc);
 			dao.salvar();
 		} catch (Exception e) {

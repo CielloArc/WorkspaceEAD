@@ -2,8 +2,10 @@ package br.com.fiap.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="TB_CONTA_CORRENTE")
 public class ContaCorrente extends Conta {
 	
 	@Column(name="VL_TARIFA", nullable=false)
