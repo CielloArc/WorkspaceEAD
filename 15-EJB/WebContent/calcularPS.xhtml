@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<div>
+		<h:form>
+			<h:outputLabel value="NAC" for="idNac" />
+			<h:inputText value="#{fiapBean.nac}" id="idNac" />		
+			<h:outputLabel value="AM" for="idAM" />
+			<h:inputText value="#{fiapBean.am}" id="idAM" />
+			<h:outputLabel value="Enade" for="idEnade" />
+			<h:inputText value="#{fiapBean.enade}" id="idEnade" />
+			
+			<h:commandButton action="#{fiapBean.calcular()}" value="Calcular PS" />
+		</h:form>	
+	</div>
+</body> 
+</html>
