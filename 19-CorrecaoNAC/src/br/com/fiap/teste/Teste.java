@@ -27,7 +27,6 @@ public class Teste {
 		
 		livro.setAutores(lista);
 		
-		
 		try {
 			dao.cadastrar(livro);
 			dao.commit();
